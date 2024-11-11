@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+/* HEADER AND NAVIGATION STYLING */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 120px;
+
+}
+.logo{
+    padding: 20px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li{
+    padding: 30px;
+}
+nav ul li a{
+    color: black;
+}
+.sign-inUp{
+   padding: 20px;
+}
+.sign-inUp button{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    color: #F53855;
+    border: 1px solid #F53855;
+    background-color: white;
+    font-size: 16px;
+}
+.sign-inUp a{
+    height: 19px;
+    width: 53px;
+    padding: 10px;
+    line-height: 18.96px;
+    font-weight:bold;
+    color: black;
+}
+/* MAIN ELEMENT STYLING */
+main{
+    padding: 30px 120px;
+}
+/* HERO SECTION STYLING */
+.hero{
+display: flex;
+justify-content: space-between;
+}
+.hero img{
+    width: 611px;
+    height: 330.22px;
+}
+.hero-left h1{
+    width: 555px;
+    height: 140px;
+    font-size: 50px;
+    line-height: 70px;
+}
+.hero-left {
+    padding: 20px;
+}
+    .hero-left p {
+       font-size: 16px;
+       line-height: 30px;
+       width: 555px;
+       height: 60px;
+ }
+ .hero-left button{
+    width: 250px;
+    height: 55.29px;
+    border-radius: 10px;
+    margin: 40px 0;
+    border: none;
+    background-color: #F53838;
+    color: white;
+    box-shadow: 0 0 30px 0 #F53838 ;
+    cursor: pointer;
+    }
+
+.hero-right{
+    width: 500px;
+    height: 382.44px;
+    
+}
+/* THE USER LOCATION SERVER SECTION  */
+
+.uls{
+    display: flex;
+    width: 1140px;
+    padding: 30px 120px;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 90px;
+}
+.uls-box{
+    width: 250px;
+    height: 126px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    border-right: 1px solid #EEEFF2;
+    padding: 20px;
+}
+.uls-box p{
+font-size: 20px;
+line-height: 30px;
+font-weight: bold;
+}
+.uls-box span{
+    color: #4F5665;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+/* WE PROVIDE MANY FEATURES SECTION  */
+.weProvide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weProvide-right h2{
+    height:100px ;
+    width:383.41px ;
+    font-size: 35px;
+    line-height: 50px ;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+.weProvide-right p{
+    margin: 20px 0;
+    height:60px ;
+    width:427.88px ;
+    font-size: 16px;
+    line-height: 30px ;
+    color: #4F5665;
+}
+.weProvide-right ul li{
+    list-style-image: url('./Assets/images/bx_bxs-check-circle.png');
+    list-style-position: inside;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 10px 0;
+
+}
+
+/* CHOOOSE PLAN SECTION  */
+
+.choosePlan{
+    text-align: center;
+}
+.choosePlan > h3{
+    font-size: 35px;
+    line-height: 50px;
+    padding: 20px;
+}
+.choosePlan p{
+    font-size: 16px;
+    line-height: 30px;
+    height: 60px;
+    margin: 20px;
+}
+.plans{
+    display: flex;
+    justify-content: space-between;
+}
+.planCard{
+    width: 330px;
+    height: 760px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px 0;
+}
+.planCard:hover{
+    border-color: #F53838;
+}
+/* .planCard ul{
+    margin: 0 auto;
+} */
+.planCard ul li{
+    line-height: 30px;
+    padding: 10px;
+    list-style-position: inside;
+    list-style-image: url('./Assets/images/jam_check.png');
+    margin: 0 60px;
+    text-align: left;
+   
+  
+}
+.planCard h4{
+    font-size: 18px;
+    line-height: 30px;
+ }
+ .prices{
+    font-size: 25px;
+    line-height: 30px;
+ }
+ .freePlan .prices{
+    margin-top: 170px;
+ }
+ .stanPlan .prices{
+    margin-top: 110px;
+ }
+ .premPlan .prices{
+    margin-top: 50px;
+ }
+ .prices button{
+    width: 177.88px;
+    height: 45px;
+    margin: 20px;
+    border-radius: 50px;
+    border-color: #F53838;
+    color: #F53838;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 700;
+ }
+ .prices button:hover{
+    background-color: #F53838;
+    color: white;
+ }
+ .prices span{
+    color:#4F5665;
+ }
+
+ /* HUGE GLOBAL NETWORK OF FAST VPN SECTION */
+
+ .hugeGlobeNet{
+    text-align: center;
+    margin: 30px 0;
+
+ }
+ .hugeGlobeNet h2{
+    width: 381.45px;
+    font-size: 35px;
+    line-height: 50px;
+    margin: 0 auto;
+ }
+ .hugeGlobeNet p{
+    color: #4F5665;
+    font-size: 16px;
+    margin: 10px 0 30px 0;
+ }
+ .hugeGlobeNet p span{
+    color: black;
+    font-weight: 500;
+ }
+
+ .compLogos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+ 
+ /* TRUSTED BY THOUSANDS OF HAPPY CUSTOMER SECTION */
+
+ .trusted-Section h2{
+    width: 447.81px;
+    margin: 0 auto;
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+ }
+ .trusted-Section > p{
+    width: 555px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    height: 60px;
+    color: #4F5665;
+ }
+
+ .card-holder{
+    display: flex;
+    justify-content: space-between;
+ }
+ .card{
+    width: 420px;
+    height:230px ;
+    border: 1px solid #DDDDDD;
+    margin: 20px;
+    padding: 20px;
+ }
+ .card p{
+    font-size: 16px;
+    line-height: 30px;
+ }
+ .profile{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+ }
+ .profile h6{
+    margin: 0 10px;
+ }
+ .profile > p{
+    margin-left: 40px;
+ }
+ .name{
+    padding: 5px;
+ }
+ .card:hover{
+    border: 1px solid #F53838;
+ }
+
+ /* SUBSCRIBE NOW SECTION  */
+
+ .sub-now{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1077px;
+    height: 233px;
+    padding: 40px;
+    margin: 0 auto;
+ }
+ .sub-now-right button{
+    width: 250px;
+    height: 60px;
+    color: white;
+    background-color: #F53838;
+    border: none;
+    border-radius: 10px;
+ }
+ .sub-now-left{
+    height: 116px;
+    width: 410px;
+ }
+ .sub-now-left h3{
+    color: #0B132A;
+    font-size: 35px;
+    line-height: 45px;
+    width: 371.61px;
+
+ }
+ .sub-now-left p{
+font-family: Rubik;
+font-size: 16px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+    
+ }
+ /* FOOTER SECTION */
+ footer{
+    padding: 30px 120px;
+    height: 563.12px;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: space-between;
+ }
+ .footer-right{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 30px;
+ }
+ .footer-right li{
+    font-size: 16px;
+    line-height: 30px;
+    color: black;
+ }
+ .footer-right li a{
+    color: black;
+ }
+ .footer-left{
+    padding: 30px;
+ }
+ .footer-left p{
+    width: 340px;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+ }
+ .product, .Engage, .earnMoney{
+    height: 280px;
+    
+ }
+ .socials{
+    padding: 20px;
+    text-align: left;
+    margin-left: -40px;
+ }
