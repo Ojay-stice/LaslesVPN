@@ -5,6 +5,9 @@
     text-decoration: none;
     list-style-type: none;
 }
+body{
+    font-family: 'inter';
+}
 /* HEADER AND NAVIGATION STYLING */
 header{
     display: flex;
@@ -401,3 +404,28 @@ text-decoration-skip-ink: none;
     text-align: left;
     margin-left: -40px;
  }
+ @media screen and (max-width: 600px) {
+    header{
+        border: 1px solid;
+        
+    }
+    .hero{
+        display: block;
+        
+    }
+    .hero-right{
+       
+    }
+    nav {
+      display: none;
+    }
+    .sign-inUp{
+        display: flex;
+       
+        border: 1px solid;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+  }
