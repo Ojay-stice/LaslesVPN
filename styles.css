@@ -32,14 +32,36 @@ nav ul{
 }
 nav li{
     padding: .9rem 2rem;
+    
+}
+nav li a {
+   color: black;
 }
 .sign-inUp{
-    display: flex;
-    border: 1px solid;
+    gap: 20px;
+    width: 250px;
+}
+.sign-inUp button{
+   width: 150px;
+   background-color: white;
+   height: 45px;
+   border-radius: 50px;
+   border: 1px solid #F53838;
+   color: #F53838;
+}
+.sign-inUp button:hover{
+   background-color: #F53838;
+   color: white;
+}
+.sign-inUp a{
+   width: 53px;
+   padding: 10px;
+   color: black;
 }
 /* MAIN ELEMENT STYLING */
 main{
     padding: 30px 120px;
+    width: 100vw;
 }
 /* HERO SECTION STYLING */
 .hero{
@@ -78,7 +100,6 @@ justify-content: space-between;
     }
 
 .hero-right{
-    width: 500px;
     height: 382.44px;
     
 }
@@ -86,7 +107,7 @@ justify-content: space-between;
 
 .uls{
     display: flex;
-    width: 1140px;
+    width: 1110px;
     padding: 30px 120px;
     justify-content: center;
     margin: 40px 0;
@@ -124,8 +145,8 @@ font-weight: bold;
     width:383.41px ;
     font-size: 35px;
     line-height: 50px ;
-    padding: 20px 0;
-    margin: 20px 0;
+    padding:  0;
+    margin:  0;
 }
 .weProvide-right p{
     margin: 20px 0;
@@ -267,7 +288,7 @@ font-weight: bold;
  .trusted-Section > p{
     width: 555px;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 30px;
     text-align: center;
     height: 60px;
@@ -293,12 +314,15 @@ font-weight: bold;
     display: flex;
     align-items: center;
     padding: 10px;
+    position: relative;
  }
  .profile h6{
     margin: 0 10px;
  }
  .profile > p{
-    margin-left: 40px;
+    margin-left: 0px;
+    position: absolute;
+    right: 10px;
  }
  .name{
     padding: 5px;
@@ -351,6 +375,7 @@ text-decoration-skip-ink: none;
  /* FOOTER SECTION */
  footer{
     padding: 30px 120px;
+    width: 100vw;
     height: 563.12px;
     background-color: #F8F8F8;
     display: flex;
@@ -367,7 +392,7 @@ text-decoration-skip-ink: none;
     line-height: 30px;
     color: black;
  }
- .footer-right> li a{
+ .footer-right li a{
     color: black;
  }
  .footer-left{
@@ -391,7 +416,7 @@ text-decoration-skip-ink: none;
  .socials{
     padding: 20px;
     text-align: left;
-    margin-left: -40px;
+    margin-left: -30px;
     
  }
  /* END OF FOOTER SECTION */
@@ -427,25 +452,24 @@ nav ul.active{
         border: 1px solid;
     
     }
-    #menu{
-        
-    }
     
 }
 @media screen and (max-width:600px) {
     header{
         display: flex;
-        max-width: 100vw;
+        width: 100vw;
         justify-content: space-between;
-        padding: .8rem;
-        margin: 0 auto;
+        padding: 20px;
+        
     }
+   
+  
     nav ul{
         position: fixed;
         top: 80px;
         height: calc(100vh - 80px);
-        border: 1px solid red;
-        width: 100%;
+        border: 1px solid #F53838;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         padding: 1rem 3.5rem;
@@ -453,6 +477,7 @@ nav ul.active{
         backdrop-filter: blur(15px);
         left: -110vw;
         transition: 1s ease-in-out;
+
     }
     nav ul li {
         color: black;
@@ -464,59 +489,71 @@ nav ul.active{
         display: none;
     }
     main{
-        padding:10px ;
+        padding:1px ;
+        width: 370px;
+        margin: 0 auto;
+      
+
     }
-    .hero{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        }
-        .hero img{
-            width: 90vw;
-            height: 330.22px;
-        }
-        .hero-left h1{
-            width: 90vw;
-            height: 130px;
-            font-size: 2rem;
-            line-height: 3.3rem;
-        }
-        .hero-left {
-            padding: 10px;
-        }
-            .hero-left p {
-               font-size: .9rem;
-               line-height: 1.2rem;
-               width: 90vw;
-               height: 50px;
-               
+
+
+        .hero{
+         display: flex;
+         flex-direction: column;
+         width: 360px;
+         justify-content: space-between;
+         padding: .8em;
+         margin: 0 auto;
          }
-         .hero-left button{
-            width: 200px;
-            height: 55.29px;
-            border-radius: 10px;
-            margin: 20px 0;
-            border: none;
-            background-color: #F53838;
-            color: white;
-            box-shadow: 0 0 30px 0 #F53838 ;
-            cursor: pointer;
-            }
-        
-        .hero-right{
-            width: 100vw;
-            height: 382.44px;
-            
-        }
+         .hero img{
+             width: 90vw;
+             height: 300.22px;
+         }
+         .hero-left h1{
+            width: 360px;
+             padding: 10px;
+             font-size: 2.3rem;
+             line-height: 3rem;
+             margin-bottom: 10px;
+         }
+         .hero-left {
+             padding: 10px;
+         }
+             .hero-left p {
+                font-size: 1.2rem;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                line-height: 30px;
+                width: 350px;
+                height: 70px;
+                padding: 10px 0;
+          }
+          .hero-left button{
+             width: 250px;
+             height: 55.29px;
+             border-radius: 10px;
+             margin: 40px 0;
+             border: none;
+             background-color: #F53838;
+             color: white;
+             box-shadow: 0 0 30px 0 #F53838 ;
+             cursor: pointer;
+             }
+         
+         .hero-right{
+             height: 382.44px;
+             
+         }
 
         .uls{
             display: flex;
             flex-direction: column;
-            width: 90vw;
+            width: 360px;
             padding: 10px;
             justify-content: center;
             align-items: center;
             margin-top: 10px;
+
         }
         .uls-box{
             width: 90vw;
@@ -525,6 +562,7 @@ nav ul.active{
             align-items: center;
             justify-content: center;
             border-right: 1px solid #EEEFF2;
+            ;
            
         }
         .uls-box p{
@@ -542,7 +580,8 @@ nav ul.active{
 .weProvide{
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 360px;
+    padding: 0 10px;
     justify-content: space-between;
     align-items: center;
 }
@@ -551,27 +590,37 @@ nav ul.active{
 }
 
 .weProvide-right h2{
-    height:100px ;
-    width:100vw ;
+    height:120px ;
+    width:330px ;
     font-size: 2rem;
     line-height: 3rem ;
     padding: 20px 10px;
-    margin: 20px 0;
+    margin-left: 10px;
+    
+    
 }
 .weProvide-right p{
-    margin: 20px 0;
+    margin: 20px 10px;
     padding: 20px 10px;
-    height:80px ;
-    width:100vw;
+    height:100px ;
+    width:330px ;
     font-size: 1rem;
     line-height: 1.8rem ;
     color: #4F5665;
+    
+    margin: 20px 0;
+}
+.weProvide-right {
+   margin: 0 auto;
 }
 .weProvide-right ul li{
     list-style-image: url('./Assets/images/bx_bxs-check-circle.png');
     list-style-position: inside;
     font-size: .8rem;
     line-height: 30px;
+    width:370px ;
+    padding: 0 20px;
+    
     
     
 
@@ -581,6 +630,7 @@ nav ul.active{
 .choosePlan{
     text-align: center;
     margin: 0 auto;
+    width: 360px;
 }
 .choosePlan > h3{
     font-size: 35px;
@@ -590,7 +640,7 @@ nav ul.active{
 .choosePlan p{
     font-size: 1rem;
     line-height: 1.5em;
-    height: 60px;
+    height: 70px;
    
 }
 .plans{
@@ -670,7 +720,7 @@ nav ul.active{
   .hugeGlobeNet{
     text-align: center;
     margin: 30px 0;
-    width: 90vw;
+    width: 360px;
 
  }
  .hugeGlobeNet h2{
@@ -683,16 +733,22 @@ nav ul.active{
     color: #4F5665;
     font-size: 16px;
     margin: 10px 0 30px 0;
+    padding: 10px;
  }
  .hugeGlobeNet p span{
     color: black;
     font-weight: 500;
  }
+ .globe img{
+   width: 400px;
+   margin: 0 auto;
+ }
 
  .compLogos{
-    width: 100vw;
+   width:370px;
     flex-direction: column;
     display: flex;
+    padding: 10px;
     
 
  }
@@ -701,19 +757,19 @@ nav ul.active{
  /* TRUSTED BY THOUSANDS OF HAPPY CUSTOMER SECTION */
 
  .trusted-Section h2{
-    width: 90vw;
+   width: 360px;
     margin: 0 auto;
     font-size: 35px;
     line-height: 50px;
     text-align: center;
  }
  .trusted-Section > p{
-    width: 90vw;
+    width: 350px;
     margin: 0 auto;
     font-size: 1rem;
-    line-height:1.8rem;
+    line-height:1.4rem;
     text-align: center;
-    height: 60px;
+    height: 80px;
     color: #4F5665;
  }
 
@@ -722,12 +778,12 @@ nav ul.active{
     flex-direction: column;
     justify-content: space-between;
     margin-top: 20px;
+    width: 360px;
  }
  .card{
-    width: 90vw;
+    width: 370px;
     height:230px ;
     border: 1px solid #DDDDDD;
-    margin: 20px;
     padding: 20px;
  }
  .card p{
@@ -739,15 +795,11 @@ nav ul.active{
     align-items: center;
     padding: 10px;
  }
- .profile h6{
-    margin: 0 10px;
- }
+
  .profile > p{
-    margin-left: 40px;
+   border: none;
  }
- .name{
-    padding: 5px;
- }
+ 
  .card:hover{
     border: 1px solid #F53838;
  }
@@ -759,10 +811,9 @@ nav ul.active{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90vw;
+    width: 370px;
     height: 233px;
     padding: 0 ;
-    margin: 10px auto;
  }
  .sub-now-right button{
     width: 200px;
@@ -774,59 +825,67 @@ nav ul.active{
  }
  .sub-now-left{
     height: 116px;
-    width: 410px;
+    width: 370px;
  }
  .sub-now-left h3{
     color: #0B132A;
     font-size: 1.8rem;
     line-height: 45px;
-    width: 90vw;
+    width: 370px;
     text-align: center;
     margin: 0 auto;
 
  }
  .sub-now-left p{
 font-family: Rubik;
-font-size: 1rem;
+font-size: .8rem;
 font-weight: 400;
 line-height: 30px;
 text-align: left;
-width: 90vw;
+width: 370px;
 text-align: center;
 margin: 0 auto;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-
     
  }
   /* FOOTER SECTION */
   footer{
+   width: 370px;
     padding: 10px;
-    width: 90vw;
     background-color: #F8F8F8;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 1000px;
  }
  .footer-right{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display:flex;
+    flex-direction: column;
+    width: 90vw;
+    row-gap: 10px;
+    padding: 10px;
+    margin: 10px;
+    
+
     
  }
  .footer-right li{
-    font-size: 16px;
-    line-height: 30px;
+    font-size: .9rem;
+    line-height: 20px;
     color: black;
  }
  .footer-right> li a{
     color: black;
+
  }
  .footer-left{
+   width: 375px;
+   padding: 10px;
    
  }
  .footer-left p{
-    width: 90vw;
+    width: 365px;
+    padding: 10px;
     font-family: Rubik;
     font-size: 16px;
     font-weight: 500;
@@ -834,21 +893,23 @@ text-decoration-skip-ink: none;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+ }
 
- }
+
  .product, .Engage, .earnMoney{
+    padding: 10px;
+    height: 200px;
+    width: 350px;
+    gap: 10px;
+   }
     
-    
- }
+ 
  .socials{
     padding: 20px;
     text-align: left;
-   
+    display: flex;
+    width: 90vw;
+ 
     
  }
-
-}
-.freePlan > img{
-
-}
-  
+  }
